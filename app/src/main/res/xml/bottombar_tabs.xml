@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <tabs>
+        <tab
+            id="@+id/tab_toolbar1"
+            icon="@mipmap/tabone_default"
+            title="One"/>
+        <tab
+            id="@+id/tab_toolbar2"
+            icon="@mipmap/tabtow_default"
+            title="Tow"/>
+        <tab
+            id="@+id/tab_toolbar3"
+            icon="@mipmap/tabthree_default"
+            title="Three"/>
+        <tab
+            id="@+id/tab_toolbar4"
+            icon="@mipmap/tabfour_default"
+            title="Four"/>
+    </tabs>
+</PreferenceScreen>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include  layout="@layout/activity_toolbar"/>
+    
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    </FrameLayout>
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:bb_tabXmlResource="@xml/bottombar_tabs"
+        app:bb_activeTabAlpha="0.7"
+        app:bb_activeTabColor="#FF0000"
+        />
+
+  <!--  app:bb_activeTabAlpha="0.5" 被选中状态的标签的颜色的透明度
+    app:bb_activeTabColor="@color/colorAccent"   被选中状态的标签的颜色
+    app:bb_behavior="shifting"   配合CoordinatorLayout使用,是否在界面滑动时隐藏底部导航栏
+    app:bb_inActiveTabAlpha="1"   默认状态的标签的颜色的透明度
+    app:bb_inActiveTabColor="@color/colorPrimary"  默认状态的标签的颜色的颜色
+    app:bb_tabXmlResource="@xml/bottom_bars_five"  关联资源文件:必须设置!!!!
+    app:bb_tabletMode="true"   模式:分为底部/竖向 true为竖向,默认为false
+    app:bb_titleTextAppearance="@style/CustomTitleTextAppearance"  设置字体的style-->
+</LinearLayout>
